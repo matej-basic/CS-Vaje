@@ -54,7 +54,7 @@ Then reconnect.
 
 ### 3. Add additional users (for experiments)
 
-Copy the script into the container:
+If the create_users.sh script is not present in docker you can copy the script into the container:
 
 ```bash
 docker cp create_users.sh ssh_lab:/create_users.sh
@@ -159,6 +159,9 @@ Test at least **3 configurations**:
 - Impact of password strength  
 - Effectiveness of protections  
 - Security vs usability trade-off  
+- Explain how fail2ban would affect your results.
+- Would it prevent brute-force attacks completely?
+- How could an attacker bypass it?
 
 ---
 
